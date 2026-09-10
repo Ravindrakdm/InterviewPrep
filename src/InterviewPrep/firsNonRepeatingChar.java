@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class firsNonRepeatingChar {
     public static char firstNonRepeatingCharacter(String str){
-        Map<Character, Integer> map = new HashMap();
+        Map<Character, Integer> map = new HashMap<>();
         for (char ch : str.toCharArray()){
             map.put(ch, map.getOrDefault(ch,0)+1);
         }
@@ -22,7 +22,7 @@ public class firsNonRepeatingChar {
 
 
     public static void main(String[] args) {
-        String str = "Ravidra";
+        String str = "Ravindra";
         char res = firstNonRepeatingCharacter(str);
         System.out.println(res);
     }
